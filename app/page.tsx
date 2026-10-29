@@ -45,7 +45,7 @@ export default function Page() {
         <div className="section-label">01 / About</div>
         <div className="about-grid">
           <div><p className="display-copy">I believe data becomes powerful when it becomes <em>understandable.</em></p></div>
-          <div className="body-copy"><p>I am Kingsley Ijeoma, a data analyst passionate about finding the story inside the numbers. My work sits at the intersection of rigorous analysis, thoughtful communication, and practical impact.</p><p>Whether I am exploring a dataset, designing a workshop, or helping a team make sense of a challenge, I bring curiosity, clarity, and care to every project.</p><a className="text-link" href="#contact">Let&apos;s work together <span>→</span></a></div>
+          <div className="body-copy"><p>I am Kingsley Ijeoma, a data analyst passionate about finding the story inside the numbers. My work sits at the intersection of rigorous analysis, thoughtful communication, and practical impact.</p><p>Whether I am exploring a dataset, designing a workshop, or helping a team make sense of a challenge, I bring curiosity, clarity, and care to every project.</p><a className="text-link" href="https://kaydtechie3.github.io/Kingsley_Ij-Personal-Portfolio.github.io/" target="_blank" rel="noopener noreferrer">Let&apos;s work together <span>→</span></a></div>
         </div>
         <div className="stat-row"><div><strong>05+</strong><span>Years learning<br />and doing</span></div><div><strong>20+</strong><span>Projects &<br />analyses</span></div><div><strong>∞</strong><span>Curiosity for<br />better questions</span></div></div>
       </section>
