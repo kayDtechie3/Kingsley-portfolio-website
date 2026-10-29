@@ -77,7 +77,7 @@ export default function Page() {
       </section>
 
       <section id="portfolio" className="section portfolio-section">
-        <div className="section-label">03 / Selected work</div><div className="portfolio-heading"><h2>Recent <em>thinking</em></h2><p>A selection of projects shaped by questions, evidence, and a desire to make things better.</p></div>
+        <div className="section-label">03 / Selected work</div><div className="portfolio-heading"><h2>Recent <em>thinking</em></h2><p>A selection of projects shaped by questions, evidence, and a desire to make things better.</p><a className="text-link project-link" href="https://kaydtechie3.github.io/Kingsley_Ij-Personal-Portfolio.github.io" target="_blank" rel="noopener noreferrer">My Project ↗</a></div>
         <div className="project-list">{projects.map((project) => <article className="project-card" key={project.number}><div className="project-number">{project.number}</div><div><p className="project-type">{project.type}</p><h3>{project.title}</h3><p>{project.copy}</p></div><span className="project-arrow">↗</span></article>)}</div>
       </section>
 
