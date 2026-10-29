@@ -1,0 +1,68 @@
+'use client'
+
+import { FormEvent, useState } from 'react'
+
+const projects = [
+  { number: '01', title: 'Data storytelling', type: 'Research & visualization', copy: 'Turning complex findings into clear visual narratives for better decisions.' },
+  { number: '02', title: 'Insight systems', type: 'Statistical analysis', copy: 'Building practical frameworks that connect evidence to meaningful action.' },
+  { number: '03', title: 'Learning design', type: 'Workshops & training', copy: 'Making technical ideas approachable, memorable, and useful for teams.' },
+]
+
+export default function Page() {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [sent, setSent] = useState(false)
+
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    setSent(true)
+  }
+
+  return (
+    <main className="site-shell">
+      <section id="home" className="hero-section">
+        <div className="hero-overlay" />
+        <nav className="site-nav" aria-label="Primary navigation">
+          <a className="brand" href="#home" onClick={() => setMenuOpen(false)}>KJ<span>.</span></a>
+          <button className="menu-toggle" aria-label="Toggle menu" aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
+            <span /> <span />
+          </button>
+          <div className={`nav-links ${menuOpen ? 'is-open' : ''}`}>
+            {['Home', 'About', 'Service', 'Portfolio', 'Contact'].map((item) => (
+              <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>{item}</a>
+            ))}
+          </div>
+        </nav>
+        <div className="hero-content">
+          <p className="eyebrow">Data analyst · educator · problem solver</p>
+          <h1>Hello, I am<br /><em>Kingsley Ijeoma</em></h1>
+          <p className="hero-copy">With a strong foundation in statistical analysis and data storytelling, I help bring useful insights to life.</p>
+          <a className="pill-button light" href="#portfolio">Explore my work <span>↗</span></a>
+        </div>
+        <div className="scroll-note"><span /> Scroll to explore</div>
+      </section>
+
+      <section id="about" className="section about-section">
+        <div className="section-label">01 / About</div>
+        <div className="about-grid">
+          <div><p className="display-copy">I believe data becomes powerful when it becomes <em>understandable.</em></p></div>
+          <div className="body-copy"><p>I am Kingsley Ijeoma, a data analyst passionate about finding the story inside the numbers. My work sits at the intersection of rigorous analysis, thoughtful communication, and practical impact.</p><p>Whether I am exploring a dataset, designing a workshop, or helping a team make sense of a challenge, I bring curiosity, clarity, and care to every project.</p><a className="text-link" href="#contact">Let&apos;s work together <span>→</span></a></div>
+        </div>
+        <div className="stat-row"><div><strong>05+</strong><span>Years learning<br />and doing</span></div><div><strong>20+</strong><span>Projects &<br />analyses</span></div><div><strong>∞</strong><span>Curiosity for<br />better questions</span></div></div>
+      </section>
+
+      <section id="service" className="section dark-section service-section">
+        <div className="section-label">02 / Services</div>
+        <div className="service-heading"><h2>What I<br /><em>bring</em></h2><p>From raw information to confident decisions, I make the process clearer at every step.</p></div>
+        <div className="service-list"><article><span>01</span><h3>Data analysis</h3><p>Exploring, cleaning, and interpreting data to reveal patterns that matter.</p></article><article><span>02</span><h3>Visualization</h3><p>Creating visual stories that make complex information easy to understand.</p></article><article><span>03</span><h3>Training & support</h3><p>Sharing practical knowledge through thoughtful, accessible learning experiences.</p></article></div>
+      </section>
+
+      <section id="portfolio" className="section portfolio-section">
+        <div className="section-label">03 / Selected work</div><div className="portfolio-heading"><h2>Recent <em>thinking</em></h2><p>A selection of projects shaped by questions, evidence, and a desire to make things better.</p></div>
+        <div className="project-list">{projects.map((project) => <article className="project-card" key={project.number}><div className="project-number">{project.number}</div><div><p className="project-type">{project.type}</p><h3>{project.title}</h3><p>{project.copy}</p></div><span className="project-arrow">↗</span></article>)}</div>
+      </section>
+
+      <section id="contact" className="contact-section"><div className="section-label">04 / Contact</div><div className="contact-grid"><div><h2>Have a question?<br /><em>Let&apos;s talk.</em></h2><p>Tell me a little about what you are working on and I&apos;ll get back to you soon.</p><div className="contact-details"><a href="mailto:kingsley@example.com">kingsley@example.com</a><span>Lagos, Nigeria · Available worldwide</span></div></div><form onSubmit={handleSubmit}><label>Name<input required name="name" placeholder="Your name" /></label><label>Email<input required type="email" name="email" placeholder="you@example.com" /></label><label>Message<textarea required name="message" placeholder="How can I help?" rows={4} /></label><button className="pill-button dark" type="submit">{sent ? 'Message ready ✓' : 'Send message ↗'}</button>{sent && <p className="form-note" role="status">Thanks — your note is ready to send. I&apos;ll be in touch.</p>}</form></div></section>
+      <footer><a className="brand" href="#home">KJ<span>.</span></a><span>© 2026 Kingsley Ijeoma</span><a href="#home">Back to top ↑</a></footer>
+    </main>
+  )
+}
