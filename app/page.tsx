@@ -60,6 +60,13 @@ export default function Page() {
             {['Business Intelligence & Reporting', 'Data Wrangling, Cleaning & Validation', 'Dashboard Development and Data Visualization', 'Data Storytelling and Insight Communication', 'Predictive Modelling', 'Problem Solving & Root Cause Analysis', 'Data Quality Analysis'].map((skill, index) => <span className="skill-chip" key={skill}><b>{String(index + 1).padStart(2, '0')}</b>{skill}</span>)}
           </div>
         </div>
+        <div className="experience-block">
+          <div className="skills-heading"><span>Experience</span><p>A practical record of turning analysis into momentum.</p></div>
+          <article className="experience-card">
+            <div className="experience-meta"><span>2026 – Now</span><span>Business Intelligence</span></div>
+            <p>Translate technical analysis into business-friendly insights by uncovering information that drives growth and efficiency.</p>
+          </article>
+        </div>
         <div className="stat-row"><div><strong>05+</strong><span>Years learning<br />and doing</span></div><div><strong>20+</strong><span>Projects &<br />analyses</span></div><div><strong>∞</strong><span>Curiosity for<br />better questions</span></div></div>
       </section>
 
