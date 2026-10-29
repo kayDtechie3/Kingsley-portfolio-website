@@ -47,6 +47,13 @@ export default function Page() {
           <div><p className="display-copy">I believe data becomes powerful when it becomes <em>understandable.</em></p></div>
           <div className="body-copy"><p>I am Kingsley Ijeoma, a data analyst passionate about finding the story inside the numbers. My work sits at the intersection of rigorous analysis, thoughtful communication, and practical impact.</p><p>Whether I am exploring a dataset, designing a workshop, or helping a team make sense of a challenge, I bring curiosity, clarity, and care to every project.</p><a className="text-link" href="https://kaydtechie3.github.io/Kingsley_Ij-Personal-Portfolio.github.io/" target="_blank" rel="noopener noreferrer">Let&apos;s work together <span>→</span></a></div>
         </div>
+        <figure className="about-video">
+          <video controls playsInline preload="metadata" aria-label="About me video">
+            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Video%202026-10-29%20at%204.51.50%20AM%20%284%29-eatRSWVslrgjzjMbUoJXvxP8nbyPig.mp4" type="video/mp4" />
+            Your browser does not support the video element.
+          </video>
+          <figcaption>About me</figcaption>
+        </figure>
         <div className="stat-row"><div><strong>05+</strong><span>Years learning<br />and doing</span></div><div><strong>20+</strong><span>Projects &<br />analyses</span></div><div><strong>∞</strong><span>Curiosity for<br />better questions</span></div></div>
       </section>
 
