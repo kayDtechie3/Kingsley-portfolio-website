@@ -54,6 +54,12 @@ export default function Page() {
           </video>
           <figcaption>About me</figcaption>
         </figure>
+        <div className="skills-block">
+          <div className="skills-heading"><span>Skills</span><p>Tools for turning complex questions into clear, useful direction.</p></div>
+          <div className="skills-list" aria-label="Skills">
+            {['Business Intelligence & Reporting', 'Data Wrangling, Cleaning & Validation', 'Dashboard Development and Data Visualization', 'Data Storytelling and Insight Communication', 'Predictive Modelling', 'Problem Solving & Root Cause Analysis', 'Data Quality Analysis'].map((skill, index) => <span className="skill-chip" key={skill}><b>{String(index + 1).padStart(2, '0')}</b>{skill}</span>)}
+          </div>
+        </div>
         <div className="stat-row"><div><strong>05+</strong><span>Years learning<br />and doing</span></div><div><strong>20+</strong><span>Projects &<br />analyses</span></div><div><strong>∞</strong><span>Curiosity for<br />better questions</span></div></div>
       </section>
 
