@@ -33,10 +33,10 @@ export default function Page() {
           </div>
         </nav>
         <div className="hero-content">
-          <p className="eyebrow">Data analyst · educator · problem solver</p>
+          <p className="eyebrow">Data analyst · problem solver</p>
           <h1>Hello, I am<br /><em>Kingsley Ijeoma</em></h1>
           <p className="hero-copy">With a strong foundation in statistical analysis and data storytelling, I help bring useful insights to life.</p>
-          <a className="pill-button light" href="#portfolio">Explore my work <span>↗</span></a>
+          <a className="pill-button light" href="https://customer-segmentation-system-8zztccyfv5piw8upzzueej.streamlit.app/" target="_blank" rel="noopener noreferrer">Explore my work <span>↗</span></a>
         </div>
         <div className="scroll-note"><span /> Scroll to explore</div>
       </section>
