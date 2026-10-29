@@ -67,7 +67,7 @@ export default function Page() {
             <p>Translate technical analysis into business-friendly insights by uncovering information that drives growth and efficiency.</p>
           </article>
         </div>
-        <div className="stat-row"><div><strong>05+</strong><span>Years learning<br />and doing</span></div><div><strong>20+</strong><span>Projects &<br />analyses</span></div><div><strong>∞</strong><span>Curiosity for<br />better questions</span></div></div>
+        <div className="stat-row"><div><strong>03+</strong><span>Years learning<br />and doing</span></div><div><strong>13+</strong><span>Projects &<br />analyses</span></div><div><strong>∞</strong><span>Curiosity for<br />better questions</span></div></div>
       </section>
 
       <section id="service" className="section dark-section service-section">
